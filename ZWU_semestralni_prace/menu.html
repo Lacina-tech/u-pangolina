@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nabídka kavárny U Pangolína — kávy, nápoje, snídaně, obědy a domácí dezerty. Vše čerstvě připravené každý den.">
+  <meta name="keywords" content="menu, kavárna, káva, dezerty, snídaně, obědy, Praha">
+  <title>Menu — Kavárna U Pangolína</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigace -->
+  <nav class="site-nav">
+    <div class="container">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <a href="index.html" class="nav-logo" aria-label="Kavárna U Pangolína — domovská stránka">
+        <img src="img/logo.png" alt="Logo Kavárny U Pangolína" class="nav-logo-img">
+        <span class="nav-logo-name">Kavárna U Pangolína</span>
+      </a>
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Otevřít navigaci">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="index.html">Domů</a></li>
+        <li><a href="o-nas.html">O nás</a></li>
+        <li><a class="active" aria-current="page">Menu</a></li>
+        <li><a href="akce.html">Akce</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Drobečková navigace -->
+  <nav class="breadcrumb" aria-label="Drobečková navigace">
+    <div class="container">
+      <a href="index.html">Domů</a>
+      <span class="sep">›</span>
+      Menu
+    </div>
+  </nav>
+
+  <!-- Page header -->
+  <header class="dark-header">
+    <div class="container">
+      <p class="eyebrow">Nabídka</p>
+      <h1>Naše menu</h1>
+      <p class="lead lead-light">Čerstvé nápoje, poctivé snídaně, lehká jídla a dezerty. Každý den od 7:00.</p>
+    </div>
+  </header>
+
+  <!-- Kategorie -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="section-intro">
+        <p class="eyebrow">Kategorie</p>
+        <h2>Co si u nás dáte</h2>
+        <p class="lead">Vyberte si kategorii a projděte si naši aktuální nabídku. Informace o alergenech vám rádi sdělíme u obsluhy.</p>
+      </div>
+      <div class="grid-2">
+
+        <article class="card">
+          <img src="img/menu-napoje.jpg" alt="Výběr kávových nápojů — espresso, latte a filtrovaná káva" class="card-img">
+          <div class="card-body">
+            <p class="eyebrow">Nápoje</p>
+            <h2 class="card-title">Kávy &amp; nápoje</h2>
+            <p class="card-desc">Espresso, cappuccino, flat white, batch brew, filtrovaná káva, matcha, čaje i sezónní limonády. Aktuálně pracujeme s blendem od pražírny Doubleshot Praha.</p>
+            <p class="card-price">od 55 Kč</p>
+            <a href="menu-napoje.html" class="card-link">Zobrazit celou nabídku →</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="img/menu-jidlo.jpg" alt="Snídaňový talíř s vejci, zeleninou a chlebem" class="card-img">
+          <div class="card-body">
+            <p class="eyebrow">Jídlo &amp; dezerty</p>
+            <h2 class="card-title">Jídlo &amp; dezerty</h2>
+            <p class="card-desc">Snídaňové talíře, avocado toast, sendviče na kvásku, domácí cheesecake, máslové croissanty a sezónní moučníky. Snídaně servírujeme po celý den.</p>
+            <p class="card-price">od 65 Kč</p>
+            <a href="menu-jidlo.html" class="card-link">Zobrazit celou nabídku →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Denní speciál -->
+  <section class="section section-latte">
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <p class="eyebrow">Každý den jinak</p>
+          <h2>Denní speciály</h2>
+          <p class="lead">Každý den pro vás vybíráme jeden single origin a připravujeme jednu polévku dne. Nabídka se mění podle sezóny, dostupnosti surovin a nálady v kuchyni.</p>
+          <p class="lead">Aktuální single origin: <strong>Etiopie Yirgacheffe</strong> — naturální zpracování, ovocné tóny, světlé pražení.</p>
+          <p class="lead">Dnešní polévka: <strong>Krémová rajčatová s bazalkou</strong> — podáváme od 11:00.</p>
+        </div>
+        <div class="img-block">
+          <img src="img/menu-special.jpg" alt="Barista připravuje single origin filtrovanou kávu metodou pour over">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Informace -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="section-intro">
+        <p class="eyebrow">Praktické informace</p>
+        <h2>Co je dobré vědět</h2>
+      </div>
+      <div class="grid-3">
+
+        <article class="card">
+          <div class="card-body" style="padding: 1.5rem;">
+            <p class="eyebrow">Alternativy</p>
+            <h3 class="card-title">Rostlinná mléka</h3>
+            <p class="card-desc">Ke každé kávě nabízíme ovesné, mandlové a sójové mléko. Příplatek 15 Kč.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-body" style="padding: 1.5rem;">
+            <p class="eyebrow">Alergeny</p>
+            <h3 class="card-title">Informace o alergenech</h3>
+            <p class="card-desc">Kompletní seznam alergenů je dostupný u obsluhy. Na vyžádání vám ho poskytneme také v písemné podobě.</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-body" style="padding: 1.5rem;">
+            <p class="eyebrow">S sebou</p>
+            <h3 class="card-title">Káva na cestu</h3>
+            <p class="card-desc">Všechno z nabídky vám připravíme také s sebou.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Zápatí -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Kavárna U Pangolína</p>
+          <p class="footer-tagline">Místo, kde se můžete na chvíli zastavit. Kde voní čerstvá káva, snídaně trvá déle a čas plyne o něco pomaleji.</p>
+        </div>
+        <div class="footer-col">
+          <p class="eyebrow">Navigace</p>
+          <a aria-current="page" style="color: var(--white-bg);">Domů</a>
+          <a href="o-nas.html">O nás</a>
+          <a href="menu.html">Menu</a>
+          <a href="akce.html">Akce</a>
+          <a href="blog.html">Blog</a>
+          <a href="kontakt.html">Kontakt</a>
+        </div>
+        <div class="footer-col">
+          <p class="eyebrow">Kontakt</p>
+          <a href="kontakt.html">Mánesova 12, Praha 2</a>
+          <a href="mailto:info@upangolina.cz">info@upangolina.cz</a>
+          <a href="tel:+420777123456">+420 777 123 456</a>
+        </div>
+        <div class="footer-col">
+          <p class="eyebrow">Otevírací doba</p>
+          <a>Po–Pá: 7:00–20:00</a>
+          <a>So–Ne: 8:00–18:00</a>
+          <p class="eyebrow" style="margin-top: 1rem;">Ostatní</p>
+          <a href="mapa-stranek.html">Mapa stránek</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Kavárna U Pangolína</p>
+        <p class="footer-copy">Školní projekt BI-ZWU · ČVUT FIT</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
