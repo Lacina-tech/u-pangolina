@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kontakt na kavárnu U Pangolína — adresa, telefon, e-mail a kontaktní formulář. Najdete nás na Mánesově ulici v Praze 2.">
+  <meta name="keywords" content="kontakt, adresa, telefon, formulář, kavárna, Praha 2, Vinohrady">
+  <title>Kontakt — Kavárna U Pangolína</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigace -->
+  <nav class="site-nav">
+    <div class="container">
+      <input type="checkbox" id="nav-toggle" class="nav-toggle">
+      <a href="index.html" class="nav-logo" aria-label="Kavárna U Pangolína — domovská stránka">
+        <img src="img/logo.png" alt="Logo Kavárny U Pangolína" class="nav-logo-img">
+        <span class="nav-logo-name">Kavárna U Pangolína</span>
+      </a>
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Otevřít navigaci">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <ul class="nav-links">
+        <li><a href="index.html">Domů</a></li>
+        <li><a href="o-nas.html">O nás</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="akce.html">Akce</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a class="active" aria-current="page">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Drobečková navigace -->
+  <nav class="breadcrumb" aria-label="Drobečková navigace">
+    <div class="container">
+      <a href="index.html">Domů</a>
+      <span class="sep">›</span>
+      Kontakt
+    </div>
+  </nav>
+
+  <!-- Page header -->
+  <header class="dark-header">
+    <div class="container">
+      <p class="eyebrow">Kontakt</p>
+      <h1>Napište nám</h1>
+      <p class="lead lead-light">Rádi odpovíme na jakýkoli dotaz. Obvykle odpovídáme do 48 hodin.</p>
+    </div>
+  </header>
+
+  <!-- FORMULÁŘ + INFO -->
+  <section class="section section-white">
+    <div class="container">
+      <div class="two-col" style="align-items: start;">
+
+        <div>
+          <p class="eyebrow">Formulář</p>
+          <h2>Zanechte zprávu</h2>
+          <form action="https://formspree.io/f/mvzlyyny" method="POST" style="margin-top: 1.75rem;">
+
+            <div class="form-group">
+              <label class="form-label" for="jmeno">Jméno a příjmení</label>
+              <input class="form-input" type="text" id="jmeno" name="jmeno" placeholder="Jan Novák" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="email">E-mail</label>
+              <input class="form-input" type="email" id="email" name="email" placeholder="jan@email.cz" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="predmet">Předmět</label>
+              <input class="form-input" type="text" id="predmet" name="predmet" placeholder="Rezervace, dotaz, spolupráce…">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="zprava">Zpráva</label>
+              <textarea class="form-input" id="zprava" name="zprava" placeholder="Napište nám cokoli…" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Odeslat zprávu</button>
+            <p class="form-note">Formulář je zpracován přes službu Formspree. Odpovídáme do 48 hodin.</p>
+
+          </form>
+        </div>
+
+        <div>
+          <p class="eyebrow">Kde nás najdete</p>
+          <h2>Informace</h2>
+          <div class="contact-info-card" style="margin-top: 1.75rem;">
+
+            <div class="contact-info-item">
+              <p class="eyebrow">Adresa</p>
+              <p class="contact-info-val">Mánesova 12</p>
+              <p class="contact-info-val">120 00 Praha 2 — Vinohrady</p>
+            </div>
+
+            <div class="contact-info-item">
+              <p class="eyebrow">E-mail</p>
+              <p class="contact-info-val">info@upangolina.cz</p>
+            </div>
+
+            <div class="contact-info-item">
+              <p class="eyebrow">Telefon</p>
+              <p class="contact-info-val">+420 777 123 456</p>
+            </div>
+
+            <div class="contact-info-item">
+              <p class="eyebrow">Otevírací doba</p>
+              <p class="contact-info-val">Po–Pá: 7:00–20:00</p>
+              <p class="contact-info-val">So–Ne: 8:00–18:00</p>
+            </div>
+
+            <div class="contact-info-item">
+              <p class="eyebrow">Jak se dostat</p>
+              <p class="contact-info-val">Metro A — stanice Jiřího z Poděbrad</p>
+              <p class="contact-info-val">Tram 11, 13 — zastávka Mánesova</p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Zápatí -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Kavárna U Pangolína</p>
+          <p class="footer-tagline">Místo, kde se můžete na chvíli zastavit. Kde voní čerstvá káva, snídaně trvá déle a čas plyne o něco pomaleji.</p>
+        </div>
+        <div class="footer-col">
+          <p class="eyebrow">Navigace</p>
+          <a aria-current="page" style="color: var(--white-bg);">Domů</a>
+          <a href="o-nas.html">O nás</a>
+          <a href="menu.html">Menu</a>
+          <a href="akce.html">Akce</a>
+          <a href="blog.html">Blog</a>
+          <a href="kontakt.html">Kontakt</a>
+        </div>
+        <div class="footer-col">
+          <p class="eyebrow">Kontakt</p>
+          <a href="kontakt.html">Mánesova 12, Praha 2</a>
+          <a href="mailto:info@upangolina.cz">info@upangolina.cz</a>
+          <a href="tel:+420777123456">+420 777 123 456</a>
+        </div>
+        <div class="footer-col">
+          <p class="eyebrow">Otevírací doba</p>
+          <a>Po–Pá: 7:00–20:00</a>
+          <a>So–Ne: 8:00–18:00</a>
+          <p class="eyebrow" style="margin-top: 1rem;">Ostatní</p>
+          <a href="mapa-stranek.html">Mapa stránek</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copy">© 2026 Kavárna U Pangolína</p>
+        <p class="footer-copy">Školní projekt BI-ZWU · ČVUT FIT</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
